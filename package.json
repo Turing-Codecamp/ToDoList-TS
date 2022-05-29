@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "@types/jasmine": "^4.0.3",
+    "@types/jasminewd2": "^2.0.10",
+    "typescript": "^4.7.2"
+  }
+}

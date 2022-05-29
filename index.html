@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDoList&TS</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="./index.js" defer></script>
+</head>
+<body class="body">
+
+  <div class="to-do-list">
+    <h1 class="to-do-list__title">ToDoList</h1>
+    <form class="to-do-list__form to-do-list__form_type_add-task">
+      <input 
+        class="to-do-list__input to-do-list__input_type_add-task" 
+        placeholder="Новая задача..."
+      >
+      <button class="to-do-list__button to-do-list__button_type_submit-add-task">Добавить</button>
+    </form>
+    
+    <form class="to-do-list__form-task-list">
+      <ul class="to-do-list__task-list"></ul>
+    </form>
+  
+    </ul>
+  </div>
+
+  <template id="task-item-template">
+    <li class="to-do-list__task-item">
+      <span class="to-do-list__task-item-number"></span>
+      <input type="text" class="to-do-list__input_type_task-item" disabled>
+      <button class="to-do-list__task-item-button to-do-list__task-item-button_type_edit">
+        <img class="to-do-list__icon to-do-list__icon_type_edit" src="./icons/icon-edit.png">
+      </button>
+      <button class="to-do-list__task-item-button to-do-list__task-item-button_type_delete">
+        <img class="to-do-list__icon to-do-list__icon_type_delete" src="./icons/icon-delete.png">
+      </button>
+    </li>
+  </template>
+
+</body>
+</html>
